@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">   <!-- 2025/06/07 11:30 MODIFIED: 改为中文语言 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>尾焉获牵的空间</title> <!-- MODIFIED: 修改标题为微信读书风格网页 -->
+    <style>
+       body {
+      margin: 0;    /* MODIFIED: 去掉默认的body margin */
+      height: 100vh;    /* MODIFIED: 设置body高度为100vh，让body高度充满整个视口 */
+      background: linear-gradient(to right, #3b82f6, #9333ea); 
+      /* MODIFIED: 渐变背景色：从左到右由蓝色到紫色 */
+      font-family: "KaiTi", "STKaiti",      /* MODIFIED: 首选字体为楷体 */
+                   system-ui,         /* 系统默认UI字体 */
+                   "Segoe UI",
+                   Roboto,
+                   Helvetica,
+                   Arial,
+                   "Microsoft YaHei",
+                   "PingFang SC",
+                   "Noto Sans CJK",
+                   sans-serif,      /* MODIFIED: 备用字体列表、最后兜底的无衬线字体 */
+                   "Apple Color Emoji",
+                   "Segoe UI Emoji",
+                   "Segoe UI Symbol";
+                    /* MODIFIED: 借鉴谷歌首页的字体列表，首字体还是楷体，其它是备用字体 */
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      background-color:rgba(167, 158, 250, 0.1);  /* 2025/06/07 11:30 MODIFIED: 透明10% */
+      width: 100%;  /* 2025/06/07 11:48 MODIFIED: 让header背景填满整行，调整宽度 */
+      box-sizing: border-box;  /* 2025/06/07 12:15 MODIFIED: 避免header宽度撑出滚动条 */
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);  /* 2025/06/07 11:30 MODIFIED: header阴影 */
+      font-size: 2em;
+      text-align: center;  /* 2025/06/07 11:48 MODIFIED: header中的文字水平居中 */
+      font-weight: bold;  /* 2025/06/07 11:52 MODIFIED: 文字加粗 */
+      display: flex;  /* 2025/06/08 08:50 NEW: 使用flex布局让logo和文字横向对齐 */
+      justify-content: center;  /* 2025/06/08 08:50 NEW: 居中对齐 */
+      align-items: center;  /* 2025/06/08 08:50 NEW: 垂直居中对齐 */
+
+    }
+
+
+    h1 {
+     font-size: 3em;
+       /* MODIFIED: 调整整体位置上移，从15vh改成20vh */
+      margin-top: 20vh; 
+      /* MODIFIED: 拉大标题和搜索框的竖向间距 */
+      margin-bottom: 80px;  
+    }
+
+    .search-box {
+      /* MODIFIED: 更适配背景的浅蓝紫色，避免白色浑浊感 */   
+      /* MODIFIED: 放大整体尺寸，更大气 */    
+      background-color: hsla(248, 100%, 97%, 0.096);  /* MODIFIED: 透明度调浅一点 */
+      border: 2px solid #fff;
+      border-radius: 35px; /* MODIFIED: 圆角加大 */
+      padding: 15px 40px;  /* MODIFIED: 上下和左右padding都加大 */
+      width: 400px;        /* MODIFIED: 宽度加大 */
+      max-width: 80%;
+      outline: none;
+      font-size: 1.2em;    /* MODIFIED: 字体稍大气 */
+      color: rgb(255, 255, 255);    /* MODIFIED: 输入框中的实际输入内容（非占位符）的颜色 */
+    }
+
+    .search-box::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+    
+    .logo {
+      height: 50px;  /* 2025/06/07 12:08 MODIFIED: 设置logo高度30px，防止过大或过小 */
+      margin-right: 5px;  /* 2025/06/07 12:08 MODIFIED: logo与标题之间增加右边距 */
+      vertical-align: middle;  /* 2025/06/07 12:08 MODIFIED: logo与文字垂直居中对齐 */
+    }
+
+    </style>
+</head>
+<body>  
+  <header>  
+    <img src="logo.png" alt="Logo" class="logo">  <!-- 2025/06/07 11:55 MODIFIED: 新增logo图标 -->
+    <span>欢迎来到尾焉获牵的No.1网页</span>  <!-- 2025/06/07 11:55 MODIFIED: 新增标题 -->
+  </header>
+  <h1>Hello！尾焉获牵！</h1>
+  <input type="text" class="search-box" placeholder="请输入搜索内容...">
+</body>
+</html>
